@@ -29,6 +29,7 @@ $('#submitInfo').on("click", function (event) {
     url: '/api/friends',
     data: userData
   }).then(function (bestMatch) {
+    alert("Your best match is " + bestMatch + "!!!");
   });
 
 
