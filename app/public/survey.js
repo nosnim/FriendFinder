@@ -29,9 +29,9 @@ $('#submitInfo').on("click", function (event) {
     url: '/api/friends',
     data: userData
   }).then(function (bestMatch) {
-    $("#matchName").write("Your best match is " + bestMatch.name + "!!!");
-    $("#matchPic").append("<img src=\" + bestMatch.photo + \" />"); 
-    $("#matchScore").write("Your match score is:" + bestMatch.score +".");
+    document.getElementById("matchName").innerHTML("Your best match is " + bestMatch.name + "!!!");
+    document.getElementById("matchPic").innerHTML("<img src=\" + bestMatch.photo + \" />"); 
+    document.getElementById("matchScore").innerHTML("Your match score is:" + bestMatch.score +".");
   });
 
 
