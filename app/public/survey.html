@@ -25,11 +25,11 @@
     <p>Upload Photo of Yourself (required)</p>
     <div class="input-group mb-3">
       <div class="input-group-prepend">
-        <span class="input-group-text">Upload</span>
+        <button class="input-group-text">Upload</button>
       </div>
       <div class="">
         <input type="text" class="" id="inputGroupFile01">
-        <label class="" for="inputGroupFile01">Choose file</label>
+        <label class="" for="inputGroupFile01">Paste Link</label>
       </div>
     </div>
     <form class="surveyQuestions">
@@ -155,10 +155,18 @@
       </form>
     </form>
     <button class="btn btn-primary" type="submit" id="submitInfo">Submit</button>
+    <div id="results">
+      <div id="matchName"></div>
+      <div id="matchPic"></div>
+      <div id="matchScore"></div>
+      </div>
+    <div id="playAgain">
+      <button class="btn btn-primary" type="submit" id="play">Play Again?</button>
+    </div>
   </div>
-  <div id="matchName"></div>
-  <div id="matchPic"></div>
-  <div id="matchScore"></div>
+ 
+  
+  
 
 
   <script src="survey.js"></script>

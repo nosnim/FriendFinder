@@ -13,3 +13,9 @@ h3 {
 button {
   margin: 2% 0;
 }
+
+#results {
+  font-size: 150%;
+  color: darkred;
+  font-weight: bolder;
+}

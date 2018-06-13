@@ -29,13 +29,26 @@ $('#submitInfo').on("click", function (event) {
     url: '/api/friends',
     data: userData
   }).then(function (bestMatch) {
-    document.getElementById("matchName").innerHTML("Your best match is " + bestMatch.name + "!!!");
-    document.getElementById("matchPic").innerHTML("<img src=\" + bestMatch.photo + \" />"); 
-    document.getElementById("matchScore").innerHTML("Your match score is:" + bestMatch.score +".");
+    document.getElementById("matchName").innerHTML = ("Your Best Match Is " + bestMatch.name + "!!!");
+    var pictures = {
+      "images": [{
+        "Result": bestMatch.photo
+      }]
+    };
+    pictures.images.forEach( function(obj) {
+      var img = new Image();
+      img.src = bestMatch.photo;
+      document.getElementById("matchPic").appendChild(img);      
+    });
+    document.getElementById("matchScore").innerHTML = ("Your total difference is: " + bestMatch.friendDifference + ".");
   });
 
 
   //take data send to backend
   //user will get response from backend and it should be a friend obj
   //display a modal or popup that has the frienddata obj in it
+});
+
+$('#play').on("click", function (event) {
+location.reload();
 });
