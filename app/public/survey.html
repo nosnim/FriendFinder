@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Survey</title>
+  <link rel="stylesheet" type="text/css" href="./reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="surveyMain">
+    <h1>Survey Questions</h1>
+    <h3 class="aboutTitle">About You</h3>
+    <form class="aboutYou">
+      <p>Name (required)</p>
+      <input type="text" id="userName" name="name" placeholder="first and last name" size=50>
+    </form>
+    <br>
+    <p>Upload Photo of Yourself (required)</p>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Upload</span>
+      </div>
+      <div class="">
+        <input type="text" class="" id="inputGroupFile01">
+        <label class="" for="inputGroupFile01">Choose file</label>
+      </div>
+    </div>
+    <form class="surveyQuestions">
+      <h3>Question 1</h3>
+      <p>Your mind is always buzzing with unexplored ideas and plans.</p>
+      <form action- "/action_page.php">
+        <select class="custom-select" id="inputGroupSelect0" name="question1">
+          <option selected>Choose...</option>
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Somewhat Disagree</option>
+          <option value="3">Meh</option>
+          <option value="4">Agree</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+      </form>
+      <h3>Question 2</h3>
+      <p>Generally speaking, you rely more on your experience than your imagination.</p>
+      <form action- "/action_page.php">
+        <select class="custom-select" id="inputGroupSelect1" name="question2">
+          <option selected>Choose...</option>
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Somewhat Disagree</option>
+          <option value="3">Meh</option>
+          <option value="4">Agree</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+      </form>
+      <h3>Question 3</h3>
+      <p>You find it easy to stay relaxed and focused even when there is some pressure.</p>
+      <form action- "/action_page.php">
+        <select class="custom-select" id="inputGroupSelect2" name="question3">
+          <option selected>Choose...</option>
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Somewhat Disagree</option>
+          <option value="3">Meh</option>
+          <option value="4">Agree</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+      </form>
+      <h3>Question 4</h3>
+      <p>You rarely do something just out of sheer curiosity.</p>
+      <form action- "/action_page.php">
+        <select class="custom-select" id="inputGroupSelect3" name="question4">
+          <option selected>Choose...</option>
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Somewhat Disagree</option>
+          <option value="3">Meh</option>
+          <option value="4">Agree</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+      </form>
+      <h3>Question 5</h3>
+      <p>People can always rely on you to follow through with commitments.</p>
+      <form action- "/action_page.php">
+        <select class="custom-select" id="inputGroupSelect4" name="question5">
+          <option selected>Choose...</option>
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Somewhat Disagree</option>
+          <option value="3">Meh</option>
+          <option value="4">Agree</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+      </form>
+      <h3>Question 6</h3>
+      <p>I like playing sports.</p>
+      <form action- "/action_page.php">
+        <select class="custom-select" id="inputGroupSelect5" name="question6">
+          <option selected>Choose...</option>
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Somewhat Disagree</option>
+          <option value="3">Meh</option>
+          <option value="4">Agree</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+      </form>
+      <h3>Question 7</h3>
+      <p>In a discussion, truth should be more important than people's sensitivities.</p>
+      <form action- "/action_page.php">
+        <select class="custom-select" id="inputGroupSelect6" name="question7">
+          <option selected>Choose...</option>
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Somewhat Disagree</option>
+          <option value="3">Meh</option>
+          <option value="4">Agree</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+      </form>
+      <h3>Question 8</h3>
+      <p>You rarely get carried away by fantasies and ideas.</p>
+      <form action- "/action_page.php">
+        <select class="custom-select" id="inputGroupSelect7" name="question8">
+          <option selected>Choose...</option>
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Somewhat Disagree</option>
+          <option value="3">Meh</option>
+          <option value="4">Agree</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+      </form>
+      <h3>Question 9</h3>
+      <p>You think that everyone's views should be respected regardless of whether or not they are supported by facts.</p>
+      <form action- "/action_page.php">
+        <select class="custom-select" id="inputGroupSelect8" name="question9">
+          <option selected>Choose...</option>
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Somewhat Disagree</option>
+          <option value="3">Meh</option>
+          <option value="4">Agree</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+      </form>
+      <h3>Question 10</h3>
+      <p>You feel more energetic after spending time with a group of people.</p>
+      <form action- "/action_page.php">
+        <select class="custom-select" id="inputGroupSelect9" name="question10">
+          <option selected>Choose...</option>
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Somewhat Disagree</option>
+          <option value="3">Meh</option>
+          <option value="4">Agree</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+      </form>
+    </form>
+    <button class="btn btn-primary" type="submit" id="submitInfo">Submit</button>
+  </div>
+
+  
+  <script src="survey.js"></script>
+</body>
+
+</html>
